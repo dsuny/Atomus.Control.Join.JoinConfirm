@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{00A46B1E-87B0-4BF8-BBC5-104F3A8C958C}"
+	ProjectSection(SolutionItems) = preProject
+		src\JoinConfirm.cs = src\JoinConfirm.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atomus.Control.Join.JoinConfirm(dotNet)", "dotNet\Atomus.Control.Join.JoinConfirm(dotNet).csproj", "{0E8B7B82-44DA-4D6F-AE4B-52A503E690CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{50FD75F2-A480-4D1D-8C13-E63EB40CCCD4}"
+	ProjectSection(SolutionItems) = preProject
+		src\Controllers\JoinConfirmController.cs = src\Controllers\JoinConfirmController.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{3D4D4DD8-8E85-44D1-A0A5-F98C006CB266}"
+	ProjectSection(SolutionItems) = preProject
+		src\Models\JoinConfirmModel.cs = src\Models\JoinConfirmModel.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atomus.Control.Join.JoinConfirm(dotNetCore)", "dotNetCore\Atomus.Control.Join.JoinConfirm(dotNetCore).csproj", "{CD509F88-D804-4E5D-8C13-864320017F25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E8B7B82-44DA-4D6F-AE4B-52A503E690CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E8B7B82-44DA-4D6F-AE4B-52A503E690CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E8B7B82-44DA-4D6F-AE4B-52A503E690CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E8B7B82-44DA-4D6F-AE4B-52A503E690CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD509F88-D804-4E5D-8C13-864320017F25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD509F88-D804-4E5D-8C13-864320017F25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD509F88-D804-4E5D-8C13-864320017F25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD509F88-D804-4E5D-8C13-864320017F25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{50FD75F2-A480-4D1D-8C13-E63EB40CCCD4} = {00A46B1E-87B0-4BF8-BBC5-104F3A8C958C}
+		{3D4D4DD8-8E85-44D1-A0A5-F98C006CB266} = {00A46B1E-87B0-4BF8-BBC5-104F3A8C958C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B8403A64-6865-4803-9BD0-3D5C90532BA1}
+	EndGlobalSection
+EndGlobal
