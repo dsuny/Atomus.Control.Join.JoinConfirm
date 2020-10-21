@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\src\Controllers\JoinConfirmController.cs" Link="Controllers\JoinConfirmController.cs" />
+    <Compile Include="..\src\Models\JoinConfirmModel.cs" Link="Models\JoinConfirmModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Atomus.Core.dotNetStandard" Version="1.0.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+</Project>

@@ -1,6 +1,7 @@
 ﻿using Atomus.Controllers;
 using Atomus.Models;
 using Atomus.Service;
+using Atomus.Page;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,15 +12,15 @@ namespace Atomus.Control.Join
 {
     public class JoinConfirm : IAction
     {
-        private AtomusControlEventHandler beforeActionEventHandler;
-        private AtomusControlEventHandler afterActionEventHandler;
+        private AtomusPageEventHandler beforeActionEventHandler;
+        private AtomusPageEventHandler afterActionEventHandler;
 
         #region Init
         public JoinConfirm() { }
         #endregion
 
         #region IO
-        object IAction.ControlAction(ICore sender, AtomusControlArgs e)
+        object IAction.ControlAction(ICore sender, AtomusPageArgs e)
         {
             Dictionary<string, string> keyValuePairs;
             try
@@ -60,7 +61,7 @@ namespace Atomus.Control.Join
         #endregion
 
         #region Event
-        event AtomusControlEventHandler IAction.BeforeActionEventHandler
+        event AtomusPageEventHandler IAction.BeforeActionEventHandler
         {
             add
             {
@@ -71,7 +72,7 @@ namespace Atomus.Control.Join
                 this.beforeActionEventHandler -= value;
             }
         }
-        event AtomusControlEventHandler IAction.AfterActionEventHandler
+        event AtomusPageEventHandler IAction.AfterActionEventHandler
         {
             add
             {
